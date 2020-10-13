@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Guess my number</title>
+</head>
+<body>
+  <h1 class="title">Adivina el número</h1>
+  <form>
+    <label class="subtitle" for="number">Introduce aquí tu número:</label>
+    <input class="num-field js-num-field" type="text" id="number" name="random number">
+    <input class="button js-button" type="button" value="Prueba">
+    <label for="hint"></label>
+    <input class="message js-hint" placeholder="Pista: Escribe el número y dale a Prueba" id="hint" type="text" name="Hot or cold" />
+    <label for="counter"></label>
+    <input class="message js-counter" placeholder="Número de intentos: 0" id="counter" type="text" name="Number of tries" value=""/>
+  </form>
+  <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
