@@ -7,9 +7,11 @@ const button = document.querySelector(".js-button");
 const counter = document.querySelector(".js-counter");
 counter.readOnly = true; 
 
+// Random number
 let randomNum = Math.ceil(Math.random() * 100);
   console.log(`Mi número aleatorio es ${randomNum}`);
 
+// Number guesser
 function guessNumber (event) {
   if (number.value < 1 || number.value > 100) {
     hint.value = "El número debe estar entre 1 y 100";
@@ -24,6 +26,7 @@ function guessNumber (event) {
 
 button.addEventListener("click", guessNumber);
 
+// Click counter
 let count = 0;
 function countClicks() {
   count += 1;
