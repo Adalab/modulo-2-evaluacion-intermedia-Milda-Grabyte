@@ -2,8 +2,10 @@
 
 const number = document.querySelector(".js-num-field");
 const hint = document.querySelector(".js-hint");
+hint.readOnly = true; 
 const button = document.querySelector(".js-button");
 const counter = document.querySelector(".js-counter");
+counter.readOnly = true; 
 
 let randomNum = Math.ceil(Math.random() * 100);
   console.log(`Mi número aleatorio es ${randomNum}`);
@@ -18,14 +20,14 @@ function guessNumber (event) {
   } else {
     hint.value = "Has ganado campeona!!!";
   }
-;}
+}
 
 button.addEventListener("click", guessNumber);
 
 let count = 0;
 function countClicks() {
   count += 1;
-  counter.value = count;
+  counter.value = `Número de intentos: ${count}`;
 };
 
 button.addEventListener("click", countClicks);

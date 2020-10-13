@@ -1,8 +1,22 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 body, label, input {
   display: block;
   margin: 5px;
 }
 
+.title, .subtitle {
+  color: rgb(95, 94, 94) 
+}
+
+.num-field {
+  background-color: lightgray;
+  border-color: lightgray;
+  border-radius: 2px;
+  border-style: none;
+  height: 20px;
+}
 .button {
   height: 30px;
   border-radius: 3px;
@@ -16,5 +30,6 @@ body, label, input {
 
 .message {
   width: 250px;
+  color: rgb(118, 118, 118);
 }
 
