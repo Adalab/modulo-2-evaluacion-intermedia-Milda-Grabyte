@@ -24,8 +24,6 @@ function guessNumber (event) {
   }
 }
 
-button.addEventListener("click", guessNumber);
-
 // Click counter
 let count = 0;
 function countClicks() {
@@ -33,4 +31,10 @@ function countClicks() {
   counter.value = `Número de intentos: ${count}`;
 };
 
-button.addEventListener("click", countClicks);
+// General event function
+function onClick() {
+  guessNumber();
+  countClicks();
+}
+
+button.addEventListener("click", onClick);
