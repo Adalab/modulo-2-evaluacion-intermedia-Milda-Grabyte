@@ -6,12 +6,13 @@
   <link rel="stylesheet" href="./styles/main.css">
   <title>Guess my number</title>
 </head>
-<body>
+<body class="">
   <h1 class="title">Adivina el número</h1>
-  <form>
+  <form class="js-form">
     <label class="subtitle" for="number">Introduce aquí tu número:</label>
-    <input class="num-field js-num-field" type="text" id="number" name="random number">
+    <input class="num-field js-num-field" type="text" id="number" name="random number" autocomplete="off">
     <input class="button js-button" type="button" value="Prueba">
+    <input class="button js-reset" type="reset" value="Reset">
   </form>
   <p class="message js-hint" name="Hot or cold">Pista: Escribe el número y dale a Prueba</p>
   <p class="message js-counter" name="Number of tries">Número de intentos: 0</p>
